@@ -205,9 +205,8 @@ data = dict(
         classes=('pet', 'ps', 'pp', 'pe')),
     test=dict(
         type='CocoDataset',
-        ann_file=
-        '/root/preprocessed_dataset/Test/annotations/mask_rcnn/Test.json',
-        img_prefix='/root/preprocessed_dataset/Test/images',
+        ann_file='/root/preprocessed_dataset/annotations/mask_rcnn/Test.json',
+        img_prefix='/root/preprocessed_dataset/images',
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(
